@@ -14,5 +14,4 @@ public class InputController {
         return "input";
     }
 
-
 }
