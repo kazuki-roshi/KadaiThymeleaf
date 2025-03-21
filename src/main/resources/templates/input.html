@@ -6,14 +6,14 @@
 </head>
 <body>
     <h1 th:text="#{content.title}"></h1>
-    <h2>入力画面</h2>
-    <p>値を入力してください。</p>
+    <h2 th:text="#{content.inputmessage}"></h2>
+    <p th:text="#{content.message}"></p>
         <p th:if="${previous != ''}">
        前回入力された値は「<span th:text="${previous}"></span>」でした。
     </p>
     <form method="post" action="/output">
         <input type="text" id="val" name="val" th:value="${previous}">
-        <button type="submit">送信</button>
+        <button type="submit", th:text="#{content.button}"></button>
     </form>
 </body>
 </html>
