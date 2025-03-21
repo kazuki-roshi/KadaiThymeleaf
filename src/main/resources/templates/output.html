@@ -8,6 +8,6 @@
     <h1 th:text="#{content.title}"></h1>
     <h2 th:text="#{content.outputmessage}"></h2>
     <p th:text="'入力された値は「' + ${val} + '」です。'"></p>
-    <p><a th:href="@{/input(previous=${val})}", th:text="#{content.link}"></a></p>
+    <p><a th:href="@{/input(previous=${val})}" th:text="#{content.link}"></a></p>
 </body>
 </html>
